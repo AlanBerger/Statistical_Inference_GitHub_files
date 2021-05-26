@@ -8,7 +8,7 @@
 
 ## Monte Carlo simulation - using a random number generator to calculate statistical quantities such as power 
 
-### Alan E. Berger 21 May 2021 v7
+### Alan E. Berger 21 May 2021 v7  minor edit in Review of the strict = FALSE option in page 16 May 26
 
 ## Summary of Monte Carlo simulation
 
@@ -565,7 +565,7 @@ power_for_Welch_via_noncentral_t_distr(nx, ny, delta, sigmax, sigmay, alpha)
 
 ## Review of the **strict = FALSE** option for power, for the Welch t-test 
 
-The T-score for the Welch t-test has the following form. For any one of the N simulation runs outlined above, let meanx be the mean of the nx simulated samples from Nx, and let meany be the mean of the ny simulated samples from Ny, and let sx and sy be the corresponding sample standard deviations, and vx = sx^2 and vy = sy^2 be the sample variances. Then the Welch T-score is
+The T-score for the Welch t-test has the following form. For any one of the N simulation runs (that are detailed below), let meanx be the mean of the nx simulated samples from Nx, and let meany be the mean of the ny simulated samples from Ny, and let sx and sy be the corresponding sample standard deviations, and vx = sx^2 and vy = sy^2 be the sample variances. Then the Welch T-score is
 
 TS <- (meanx - meany) / sqrt(vx/nx + vy/ny) 
 
